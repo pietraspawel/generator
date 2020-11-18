@@ -1,0 +1,52 @@
+{
+   "class_name":"Mail",
+   "namespace":"pietras",
+   "const":{
+      "public const NEW":"new",
+      "public const SENT":"sent"
+   },
+   "properties":{
+      "id":{
+         "prefix":"private",
+         "type":"int",
+         "default":null
+      },
+      "userId":{
+         "prefix":"private",
+         "type":"?string",
+         "default":null
+      },
+      "userMail":{
+         "prefix":"private",
+         "type":"string",
+         "default":null
+      },
+      "title":{
+         "prefix":"private",
+         "type":"string"
+      },
+      "content":{
+         "prefix":"private",
+         "type":"string"
+      },
+      "sender":{
+         "prefix":"private",
+         "type":"string"
+      },
+      "status":{
+         "prefix":"private",
+         "type":"string",
+         "default":"^self::NEW"
+      },
+      "dateAdded":{
+         "prefix":"private",
+         "type":"?DateTime",
+         "default":null
+      },
+      "dateSended":{
+         "prefix":"private",
+         "type":"?DateTime",
+         "default":null
+      }
+   }
+}
