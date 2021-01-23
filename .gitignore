@@ -2,4 +2,3 @@
 *.sublime-workspace
 vendor/
 /.phpunit.result.cache
-/output
