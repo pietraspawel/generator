@@ -10,6 +10,7 @@ namespace pietras;
 
 require __DIR__ . "/../vendor/autoload.php";
 
+echo "you are here: " . __DIR__ . "\r\n";
 echo "enter path to .json file:\r\n";
 $path = trim(fgets(STDIN));
 $array = json_decode(file_get_contents(__DIR__ . $path), true);
